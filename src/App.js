@@ -45,7 +45,7 @@ const App = () => {
                                 You need to connect your Metamask wallet before you can claim your $TheAmericans Tokens
                             </p>
 
-                            <button className="button connect__button red">
+                            <button className="button connect__button red hover">
                                 Connect walet
                             </button>
                         </div>
@@ -65,7 +65,7 @@ const App = () => {
                         </div>
 
                         <div className="content__text--block">
-                            <img src="/assets/img/diamonds.svg" alt="img" className="content__text--img" />
+                            <img src="/assets/img/diamonds.png" alt="img" className="content__text--img" />
 
                             <div className="content__text--box">
                                 <p className="content__pretext">
@@ -124,7 +124,7 @@ const App = () => {
 
                                     <input type="text" className="input content__claim--input" />
 
-                                    <button className="button content__claim--button">
+                                    <button className="button content__claim--button hover">
                                         Check
                                     </button>
                                 </div>

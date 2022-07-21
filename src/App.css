@@ -64,6 +64,10 @@ input::-webkit-inner-spin-button{
     background: none;
 }
 
+.hover:hover{
+    opacity: 0.7;
+}
+
 .input::placeholder{
 
 }
@@ -567,7 +571,7 @@ input::-webkit-inner-spin-button{
 }
 @media(max-width: 480px){
 	.container{
-		max-width: 300px;
+		max-width: 90%;
 	}
 
     .header__inner, .footer__inner{
@@ -606,7 +610,7 @@ input::-webkit-inner-spin-button{
     }
 
     .content__claim--input{
-        width: 162px;
+        width: calc(100% - 38px);
     }
 
     .star4{
