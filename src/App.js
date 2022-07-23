@@ -56,7 +56,7 @@ const App = () => {
 
                         <div className="content__text--block">
                             <p className="content__text">
-                                150 million tokens (15% of the total supply of $TheAmericans token) are claimable by The Americans NFT holders upon the launch of our native token.
+                                2 million tokens (10% of the circulating supply) are claimable by the NFT holders upon the launch of our native token
                             </p>
 
                             <p className="content__text">
