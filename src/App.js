@@ -56,7 +56,7 @@ const App = () => {
 
                         <div className="content__text--block">
                             <p className="content__text">
-                                2 million tokens (10% of the circulating supply) are claimable by the NFT holders upon the launch of our native token
+                                200,000 tokens (10% of the circulating supply) are claimable by the NFT holders upon the launch of our native token
                             </p>
 
                             <p className="content__text">
