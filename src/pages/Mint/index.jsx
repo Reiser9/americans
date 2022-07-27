@@ -7,16 +7,16 @@ const Mint = () => {
 
             <div className="mint__content">
                 <h1 className="mint__title wow animate__animated animate__fadeIn">
-                    Mint &amp; Get Free
+                    Mint &amp; Get
                 </h1>
 
                 <div className="mint__points">
                     <p className="mint__point wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
-                        1 President
+                        50% of royalties claimable in ETH
                     </p>
 
                     <p className="mint__point wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
-                        <span className="yellow">1 FREE</span> CELEBRITY
+                        500,000 tokens collectively claimable
                     </p>
 
                     <p className="mint__point wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
@@ -24,11 +24,7 @@ const Mint = () => {
                     </p>
 
                     <p className="mint__point wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
-                        Presidents earn 2x in p2e game
-                    </p>
-
-                    <p className="mint__point wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
-                        50% of royalties go to holders
+                        Presidents will earn 2X in P2E games
                     </p>
                 </div>
 
@@ -41,7 +37,7 @@ const Mint = () => {
                 </p>
 
                 <p className="mint__subtext wow animate__animated animate__fadeIn">
-                    3 mints allowed per NFT
+                    1 MINT ALLOWED PER NFT
                 </p>
 
                 <div className="mint__img--inner wow animate__animated animate__fadeIn">

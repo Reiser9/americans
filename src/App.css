@@ -445,7 +445,7 @@ input::-webkit-inner-spin-button{
     min-height: 100vh;
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: 3.9rem;
 }
 
@@ -462,7 +462,6 @@ input::-webkit-inner-spin-button{
 
 .mint__content{
     width: 100%;
-    max-width: 970px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,13 +490,12 @@ input::-webkit-inner-spin-button{
 
 .mint__point{
     text-align: center;
-    margin-top: 1.2rem;
+    margin-top: .5rem;
     font-size: 3.1rem;
     font-weight: 900;
     color: #fff;
-    background: #3D3B6B;
+   text-shadow: 0 6px 5px #0040ff;
     border-radius: 9px;
-    text-transform: uppercase;
     padding: 0rem 0.5rem;
 }
 
@@ -580,6 +578,7 @@ input::-webkit-inner-spin-button{
 
 .mint__img{
     margin: .5rem 1rem;
+    opacity: 0.35;
 }
 
 /* Responsive */
@@ -645,20 +644,12 @@ input::-webkit-inner-spin-button{
 
     .mint__point{
         font-size: 2rem;
-        padding: 0.3rem 1.5rem;
+        padding: 0.3rem 1rem;
     }
 
     .mint__button{
-        margin-top: 2.5rem;
-    }
-
-    .mint__button{
-        font-size: 2.5rem;
-        padding: 1.8rem 3.2rem;
-    }
-
-    .mint__points{
-        margin-top: 2.5rem;
+        font-size: 2.3rem;
+        padding: 1.3rem 2.6rem;
     }
 }
 @media(max-width: 768px){
@@ -734,17 +725,12 @@ input::-webkit-inner-spin-button{
     }
     
     .mint__title{
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     .mint__point{
         font-size: 1.6rem;
         margin-top: 0.5rem;
-    }
-
-    .mint__button{
-        font-size: 1.8rem;
-        padding: 1.3rem 2rem;
     }
 
     .mint{
