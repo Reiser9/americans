@@ -494,7 +494,7 @@ input::-webkit-inner-spin-button{
     font-size: 3.1rem;
     font-weight: 900;
     color: #fff;
-   text-shadow: 0 6px 5px #0040ff;
+    text-shadow: 0 7px 1px #3D3B6B;
     border-radius: 9px;
     padding: 0rem 0.5rem;
 }
@@ -514,6 +514,7 @@ input::-webkit-inner-spin-button{
 .mint__button{
     text-transform: uppercase;
     padding: 3rem 5.5rem;
+    min-width: 466px;
     border-radius: 25px;
     background: #FFF8DC;
     color: #A43138;
@@ -549,6 +550,16 @@ input::-webkit-inner-spin-button{
     left: 4px;
 }
 
+.mint__button.disabled{
+    color: #FFF8DC;
+    background: rgba(255, 248, 220, 0.29);
+    /* pointer-events: none; */
+}
+
+.mint__button.disabled:before{
+    background: rgba(164, 49, 56, 0.29);
+}
+
 .mint__text{
     margin-top: 1.4rem;
     font-size: 2rem;
@@ -579,6 +590,59 @@ input::-webkit-inner-spin-button{
 .mint__img{
     margin: .5rem 1rem;
     opacity: 0.35;
+}
+
+.mint__mint--text{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.mint__mint{
+    width: 100%;
+    max-width: 710px;
+    padding: 2.1rem 2.5rem;
+    background: rgba(61, 59, 107, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.mint__inc--inner{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mint__inc{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF8DC;
+    font-weight: 900;
+    color: #3D3B6B;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 50px;
+}
+
+.mint__inc--value{
+    margin: 0rem 1rem;
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 900;
+    min-width: 50px;
+    text-align: center;
+}
+
+.mint__inc:hover{
+    color: #FFF8DC;
+    background: #A43138;
 }
 
 /* Responsive */
@@ -650,6 +714,10 @@ input::-webkit-inner-spin-button{
     .mint__button{
         font-size: 2.3rem;
         padding: 1.3rem 2.6rem;
+    }
+
+    .mint__button{
+        min-width: auto;
     }
 }
 @media(max-width: 768px){
@@ -739,6 +807,15 @@ input::-webkit-inner-spin-button{
 
     .mint__img--inner{
         margin-top: 1.5rem;
+    }
+
+    .mint__mint{
+        max-width: 100%;
+        padding: 1.5rem 2rem;
+    }
+
+    .mint__mint--text{
+        font-size: 2rem;
     }
 }
 @media(max-width: 480px){
