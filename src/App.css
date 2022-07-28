@@ -488,6 +488,11 @@ input::-webkit-inner-spin-button{
     align-items: center;
 }
 
+.mint__text--svg{
+    max-width: 100%;
+    margin-top: 3rem;
+}
+
 .mint__point{
     text-align: center;
     margin-top: .5rem;
@@ -615,6 +620,7 @@ input::-webkit-inner-spin-button{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .mint__inc{
@@ -629,15 +635,26 @@ input::-webkit-inner-spin-button{
     cursor: pointer;
     transition: .2s linear;
     border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mint__inc:last-child{
+    left: auto;
+    right: 0;
 }
 
 .mint__inc--value{
-    margin: 0rem 1rem;
     color: #fff;
     font-size: 3.1rem;
     font-weight: 900;
-    min-width: 50px;
     text-align: center;
+    background: rgba(255, 248, 220, 0.5);
+    width: 160px;
+    padding: 0rem 4.5rem;
+    border-radius: 50px;
+    line-height: 1.13;
 }
 
 .mint__inc:hover{
@@ -816,6 +833,10 @@ input::-webkit-inner-spin-button{
 
     .mint__mint--text{
         font-size: 2rem;
+    }
+
+    .mint__point{
+        text-shadow: none;
     }
 }
 @media(max-width: 480px){

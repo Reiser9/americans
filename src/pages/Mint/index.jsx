@@ -6,13 +6,26 @@ const Mint = () => {
 
     const dec = () => {
         if(count > 0){
-            setCount(count - 1);
+            setCount(parseInt(count) - 1);
         }
     }
 
     const inc = () => {
         if(count < 10000){
-            setCount(count + 1);
+            setCount(parseInt(count) + 1);
+        }
+    }
+
+    const changeInput = (e) => {
+        setCount(e.target.value);
+    }
+
+    const checkInput = (e) => {
+        if(parseInt(e.target.value) > 0 && parseInt(e.target.value) < 10000){
+            setCount(e.target.value);
+        }
+        else{
+            setCount(0);
         }
     }
 
@@ -25,7 +38,7 @@ const Mint = () => {
                     Mint &amp; Get
                 </h1>
 
-                <div className="mint__points">
+                {/* <div className="mint__points">
                     <p className="mint__point wow animate__animated animate__fadeIn">
                         1 President NFT
                     </p>
@@ -45,7 +58,9 @@ const Mint = () => {
                     <p className="mint__point wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
                         Presidents will earn 2X in P2E games
                     </p>
-                </div>
+                </div> */}
+
+                <img src="/assets/img/text.png" alt="text" className="mint__text--svg" />
 
                 {(state === "mint" || state === "disabled") && <>
                     <div className="mint__mint">
@@ -63,9 +78,7 @@ const Mint = () => {
                             -
                         </p>
 
-                        <div className="mint__inc--value">
-                            {count}
-                        </div>
+                        <input type="number" className="input mint__inc--value" value={count} onChange={changeInput} onBlur={checkInput} />
 
                         <p className="mint__inc" onClick={inc}>
                             +
